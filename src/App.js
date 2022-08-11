@@ -11,7 +11,7 @@ function App() {
         <h1>My First Login</h1>
       </header>
       {isLoggedIn
-        ? <SecretStuff />
+        ? <SecretStuff setIsLoggedIn={setIsLoggedIn} />
         : <Login setIsLoggedIn={setIsLoggedIn} />
       }
     </>
